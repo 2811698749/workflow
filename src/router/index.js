@@ -95,33 +95,9 @@ export const constantRoutes = [
     children: [
       {
         path: 'index',
-        component: () => import('@/views/workflow/index'),
+        component: () => import('@/views/bpmn/index'),
         name: 'Index',
         meta: { title: '首页', icon: 'dashboard', affix: true }
-      }
-    ]
-  },
-  {
-    path: '/dcs',
-    component: Layout,
-    children: [
-      {
-        path: 'cweld',
-        component: () => import('@/views/c_weld/list'),
-        name: 'cweld',
-        meta: { title: '焊口', icon: 'dashboard' }
-      }
-    ]
-  },
-  {
-    path: '/test',
-    component: Layout,
-    children: [
-      {
-        path: 'test',
-        component: () => import('@/views/test/test'),
-        name: 'test',
-        meta: { title: 'test', icon: 'dashboard' }
       }
     ]
   },
